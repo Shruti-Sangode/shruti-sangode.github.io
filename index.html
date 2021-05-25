@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Roboto + Roboto Slab-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Reference item-->
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container"><a href="#intro" class="navbar-brand scrollTo"><b style="font-size:40px;">S</b></a>
+          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
+              <li class="nav-item"><a href="#references" class="nav-link link-scroll">My work</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro Image-->
+    <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+      <div class="container text-center">
+        <div data-animate="fadeInDown" class="logo"><img src="img/logo-big.png" alt="logo" width="130"></div>
+        <h1 data-animate="fadeInDown" class="text-shadow mb-5">It's me, SHRUTI SANGODE!</h1>
+        <p data-animate="slideInUp" class="h3 text-shadow text-400">Freelancer as a Content Quality Analyst and Software Developer in PHP </p>
+      </div>
+    </section>
+    <!-- About-->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">About me</h2>
+        </header>
+        <div class="row">
+          <div data-animate="fadeInUp" class="col-lg-12">
+            <p>Currently I am working as a Freelancer Content Quality Analyst and also having 4 years of web software development experience on PHP, MYSQL, CMS Wordpress, Joomla and Framework Cakephp.  I never compromise target over quality. I maintain my target and quality equally. I am interested to learn new technologies quickly and confident in work having positive attitude.
+			</p>
+			<button style="margin-left: 469px;">
+			<a href="img/Resume_Shruti.pdf" class="primary-btn" data-text="Resume" target="_blank">
+						<span>R</span>
+						<span>e</span>
+						<span>s</span>
+						<span>u</span>
+						<span>m</span>
+						<span>e</span>
+					</a>
+			</button>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+   
+
+
+
+
+
+	 <section id="references">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="mb-5 text-center">
+            <h2 data-animate="fadeInUp" class="title">My work</h2>
+            <p data-animate="fadeInUp" class="lead">I have worked on dozens of projects so I have picked only the latest for you.</p>
+          </div>
+          <!--<ul id="filter" data-animate="fadeInUp">
+            <li class="active"><a href="#" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="webdesign">Webdesign</a></li>
+            <li><a href="#" data-filter="seo">SEO</a></li>
+            <li><a href="#" data-filter="marketing">Marketing</a></li>
+            <li><a href="#" data-filter="other">Other</a></li>
+          </ul>-->
+          <div id="detail">
+            <div class="row">
+              <div class="col-lg-10 mx-auto"><span class="close">×</span>
+                <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div class="text-center">
+                  <h1 id="detail-title" class="title"></h1>
+                </div>
+                <div id="detail-content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Reference detail-->
+
+          <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+                      <!--freelancer-->
+
+   <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+       <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/zilli.png" alt="sea" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Zilli</h3>
+                            <p> This is a freelancing project WORK FOR ZILI - under MI brand.                    
+              </p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p> 
+            App store- https://play.google.com/store/apps/details?id=com.funnypuri.client&hl=en_IN
+In Zili Funny videos app, i was working for
+1) Backend Process
+1. Per day we review more than 1 lakh videos.
+2. We check the video quality
+3. Quality: As per company auditing standard and Google Auditing standard
+4. Our error rates are 0% with proper speed.
+2) Frontend Process
+1. We review the video quality the same as a Backend process
+2. We put the appropriate tags for videos, For example: MEME: for funny caption videos, Prank for prank videos , Status: For Shayari videos, Special Talent: Talent showing videos
+            </p>
+                        <p class="buttons text-center"><a href="https://play.google.com/store/apps/details?id=com.funnypuri.client&hl=en_IN" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+			 <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-9.png" alt="sea" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Rudranil Social Foundation </h3>
+                            <p> This project is a content management website developed for Charity for rural areas of needy people.                   
+							</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p> 
+						 This project is a content management website developed for Charity for rural areas of needy people. The Rudranil Social Foundation was established on February 4th, 2019 on the occasion of the Memorial of Late Chhatrapati Abhayasinharaje Bhosale. Our goal is to help as many needy people as possible from rural areas. In view of this, free ambulance services, funeral materials, educational materials for economically weaker students, employment opportunities for women by setting up small industries, environmental supplemental plantation programs, cultural programs are organized.
+						</p>
+                        <p class="buttons text-center"><a href="http://www.rudranilsocialfoundation.org/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+				   <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-10.png" alt="sea" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Heavenly Riches</h3>
+                            <p> This Project is an Online Shopping and content management website developed for 
+                                        for Heavenly Riches. This project contains Post,Page,Product,Payment gateway. 
+                                Client can add content, video, flash animation, pages list, Google ads, banner ads in   pages.                     
+
+							</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p> This Project is an Online Shopping and content management website developed for 
+                                        for Heavenly Riches. This project contains Post,Page,Product,Payment gateway. 
+                          Client can add content, video, flash animation, pages list, Google ads, banner ads in   pages.                     
+						</p>
+                        <p class="buttons text-center"><a href="https://heavenly-riches.co.uk/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-1.png" alt="sea" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Sea Green Distributions LLP </h3>
+                            <p> This project is a content management website developed for NanoFixIt Liquid Screen   
+                                 Protectors   also created application in Cake php which Client can be provide the products 
+                                 to various distributors as Regional Distributor, Sub Distributor and Retailer.
+							</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>The NanoFixIt liquid screen protectors offer the best value proposition for our customers compared to traditional high-end screen protectors made from tempered glass or plastic. The liquid screen protector is a multipurpose product that can be used on the glass screen of any electronic device. Traditional screen protectors are only made for one specific device and are costly. With a NanoFixIt liquid screen protector you are not only buying a multipurpose product for any model or device but a product that has been tested and certified with the highest standard available amongst screen protectors (9H).</p>
+                        <p class="buttons text-center"><a href="http://sgdindia.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-2.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Prash Expressions </h3>
+                            <p>This project is a content management website developed for Painter with various portfolios. 
+                            Website has created using wordpress.
+                            </p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider3.jpg,img/main-slider1.jpg" class="sr-only reference-description">
+                        <p>This project is a content management website developed for Painter with various portfolios. 
+                            Website has created using wordpress.He is presently working on a Series 'In Search Of Self' and 'Budhha'. He began working on the subject “In Search Of Self” few years back. 
+							As the name suggests it is the search into one’s own inner self. Searching self is like searching the universe. 
+							It is a journey between earth and space. It may not necessarily be realistic search but bending towards obstructional concept.
+							Life as we live is a heady mix of dreams and reality.
+							In Search of self depicts a journey that begins from hope with reality interspersed in between. 
+							On the other hand, Buddhism starts with the assumption that normal functioning is full of suffering caused by a false sense of self, and works to get people from a state of “normal” to enlighten.</p>
+                        <p class="buttons text-center"><a href="http://prashantphusateart.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-3.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">GB Multicare</h3>
+                            <p>This project is a content management website developed for Hospital which has created 
+                           using wordpress also it is used for blogging.
+                           </p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>  This project is a content management website developed for Hospital which has created 
+                           using wordpress also it is used for blogging.GB Multicare Hospitals has dedicated Centers of Excellence for several key specialties and superspecialties. 
+						   At GB Multicare, we consider it our prime Responsibility to provide high quality clinical care to all our patients. Putting the patient at the core of our operations, we have developed robust quality standards, used expert diagnoses and treatment plans and enhanced infection and safety protocols to render them the most appropriate treatment.
+                        </p>
+                        <p class="buttons text-center"><a href="http://gbmulticare.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-4.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Anicca Data Science Solutions</h3>
+                            <p>This project is on wordpress which is developed for Business solutions
+                           also it is used for blogging.
+                          </p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        
+                        <p> This project is on wordpress which is developed for Business solutions
+                           also it is used for blogging.Data + AI = Business Solutions Anicca Data provides an AI platform that encompasses algorithmic modeling and develops end-to-end solutions for your business domain. 
+						   Our core objective is to understand your business ecosystem and apply mathematical principles that will enable you to address the subject matter critical to your customers.
+                        </p>
+                        <p class="buttons text-center"><a href="http://www.aniccadata.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-5.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Glover Street Surgery</h3>
+                            <p>This project is on wordpress which is developed for Hospital.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>This project is on wordpress which is developed for Hospital.
+						The earliest record indicates the Dr Glanville Jeffries Rawles started this practice after graduation. His practice was bought by Dr John Mckenzie Woods in 1932. Woods family built purpose built “doctors house” built at the corner of pacific highway and Glover Street. 
+						Glover Street Surgery was bought by the late and esteemed Dr Neil Gordon in 1937 and then taken over by his son Dr Denis Gordon. Dr Denis Gordon has been a popular doctor in Belmont for over 5 decades and served various clubs. 
+						
+						</p>
+                        <p class="buttons text-center"><a href="http://gloverstreetsurgery.com.au/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="other" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-6.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Awaj Do</h3>
+                            <p>This project is on wordpress and cakephp framework which helps clients to create Admin, Transporter and Shipper.
+                           </p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>This project is on wordpress and cakephp framework which helps clients to create Admin, Transporter and Shipper.
+						    Awaj Do is the revolutionary match making on-demand truck booking application that instantly matches shipper’s requirement with our registered vehicle database. 
+							With Awaj Do Shippers can book truck anytime & to anywhere without worrying, with upfront price discovery.
+						
+						</p>
+                        <p class="buttons text-center"><a href="http://awajdo.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-7.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Arfamo </h3>
+                            <p>This project is a content management website developed Perfumes website created using Wordpress.
+                          </p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p> This project is a content management website developed Perfumes website created using Wordpress.</p>
+                        <p class="buttons text-center"><a href=" http://arfamo.in/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/project-8.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Money uncle</h3>
+                            <p>This project is on laravel framework in which I worked on SEO as a requirement of client.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="http://www.moneyuncle.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a>
+                    </div>
+                  </div>
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Contact-->
+    <section id="contact" data-animate="bounceIn" class="contact-section contact">
+      
+    </section>
+ <header class="text-center">
+          <h2 class="title">Contact me</h2>
+        </header>
+    <footer class="main-footer">
+	<div class="container">
+       
+        <div class="row">
+          <div class="col-lg-8 mx-auto" style="margin-left:245px;">
+           <p style="text-align:center;font-size:20px;"> The best way to reach me is thorugh<br> email: shruti.sangode@gmail.com</p>
+			<br/>
+			<h3 class="title"  style="margin-left: 245px;">Address</h3>
+			<br/><p  style="text-align:center;font-size:20px;">Akhil Vishwa Bharti Housing Society,
+Plot No 161, Near Sugat Nagar,
+Rahul Nagar, Nagpur - 440014, India.</p>
+
+			 <h3 class="title" style="margin-left: 245px;">Follow me</h3>
+			
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-left:351px;">
+          <div class="col-md-6 text-center text-lg-middle">
+            <p class="social" >
+              <a href="https://www.facebook.com/shruti.sangode" class="external facebook wow fadeInUp"  target="blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shruti-sangode-75464755/" data-wow-delay="0.2s" class="external linkedin wow fadeInUp" target="blank">
+                <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/shruti_chichi/" target="blank">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" data-wow-delay="0.4s" class="external gplus wow fadeInUp"  target="blank"><i class="fa fa-google-plus"></i></a><a href="mailto:shruti.sangode@gmail.com" data-wow-delay="0.6s" class="email wow fadeInUp"><i class="fa fa-envelope"></i></a></p>
+          </div>
+          <!-- /.6-->
+          
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="js/front.js"></script>
+  </body>
+</html>
